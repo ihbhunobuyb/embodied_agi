@@ -63,3 +63,60 @@
 1. World Model 从虚拟环境转向真实城市场景
 2. Agent 训练从奖励函数转向自然语言指导
 3. 架构创新继续（Attention Residuals）
+
+## 2026-03-20 研究的论文（精选5篇）
+
+### 1. Loc3R-VLM: Language-based Localization and 3D Reasoning with Vision-Language Models
+
+- **arXiv ID**: 2603.18002v1
+- **发布日期**: 2026-03-18
+- **作者**: Kevin Qu, Haozhe Qi, Mihai Dusmanu, Mahdi Rad, Rui Wang, Marc Pollefeys
+- **类别**: cs.CV, cs.AI, cs.CL
+- **相关性**: ⭐⭐⭐⭐⭐
+- **关键词**: VLM, 3D推理, 空间理解, 视点感知, 几何增强
+- **摘要**: 多模态大语言模型在连接视觉和语言方面取得了显著进展，但在空间理解和视点感知推理方面仍然存在困难。最近的努力旨在通过增强输入表示的几何线索来解决这一问题。
+- **文档**: papers/2026-03-20_01_Loc3R-VLM.md
+
+### 2. Feeling the Space: Egomotion-Aware Video Representation for Efficient and Accurate 3D Scene Understanding
+
+- **arXiv ID**: 2603.17980v1
+- **发布日期**: 2026-03-18
+- **作者**: Shuyao Shi, Kang G. Shin
+- **类别**: cs.CV
+- **相关性**: ⭐⭐⭐⭐⭐
+- **关键词**: 3D场景理解, 自我运动, 视频表示, 效率
+- **摘要**: 最近的多模态大语言模型在3D场景的空间推理方面显示出很高的潜力。然而，它们通常依赖于计算昂贵的3D表示。
+- **文档**: papers/2026-03-20_02_Feeling_the_Space.md
+
+### 3. GMT: Goal-Conditioned Multimodal Transformer for 6-DOF Object Trajectory Synthesis in 3D Scenes
+
+- **arXiv ID**: 2603.17993v1
+- **发布日期**: 2026-03-18
+- **作者**: Huajian Zeng, Abhishek Saroha, Daniel Cremers, Xi Wang
+- **类别**: cs.CV, cs.RO
+- **相关性**: ⭐⭐⭐⭐⭐
+- **关键词**: 6-DOF轨迹, 目标条件, 多模态变换器, 机器人操作
+- **摘要**: 在3D环境中合成可控的6-DOF物体操作轨迹对于使机器人能够与复杂场景交互至关重要。
+- **文档**: papers/2026-03-20_03_GMT.md
+
+### 4. EchoGen: Cycle-Consistent Learning for Unified Layout-Image Generation and Understanding
+
+- **arXiv ID**: 2603.18001v1
+- **发布日期**: 2026-03-18
+- **作者**: Kai Zou, Hongbo Liu, Dian Zheng, Jianxiong Gao, Zhiwei Zhao, Bin Liu
+- **类别**: cs.CV
+- **相关性**: ⭐⭐⭐⭐
+- **关键词**: 布局生成, 图像理解, 空间关系, 统一框架
+- **摘要**: EchoGen是一个统一的布局到图像生成和图像定位框架。
+- **文档**: papers/2026-03-20_04_EchoGen.md
+
+### 5. LoST: Level of Semantics Tokenization for 3D Shapes
+
+- **arXiv ID**: 2603.17995v1
+- **发布日期**: 2026-03-18
+- **作者**: Niladri Shekhar Dutt, Zifan Shi, Paul Guerrero, et al.
+- **类别**: cs.CV, cs.GR, cs.LG
+- **相关性**: ⭐⭐⭐⭐
+- **关键词**: 3D生成, tokenization, 自回归模型, 语义分词
+- **摘要**: Tokenization是自回归模型中生成建模的关键技术，3D形状的最佳tokenization仍然是一个开放问题。
+- **文档**: papers/2026-03-20_05_LoST.md
