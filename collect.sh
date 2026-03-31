@@ -13,7 +13,7 @@ cd "$WORKDIR"
 for i in 1 2 3; do
     echo "Attempt $i..." >> "$LOGFILE"
     curl -s --max-time 30 --retry 3 --retry-delay 10 \
-        "https://export.arxiv.org/api/query?search_query=cat:cs.AI+AND+(embodied+OR+robot+OR+manipulation+OR+grasping)&max_results=5&sortBy=submittedDate&sortOrder=descending" \
+        "https://export.arxiv.org/api/query?search_query=cat:cs.AI+AND+(all:embodied+OR+all:robot+OR+all:manipulation+OR+all:grasping+OR+all:VR+OR+all:sim2real)&max_results=5&sortBy=submittedDate&sortOrder=descending" \
         > /tmp/arxiv_embodied.xml 2>&1
     
     if grep -q "<entry>" /tmp/arxiv_embodied.xml; then
@@ -32,6 +32,10 @@ done
     
     if grep -q "<entry>" /tmp/arxiv_embodied.xml; then
         grep -oP '(?<=<id>)[^<]+(?=</id>)' /tmp/arxiv_embodied.xml | head -5 | while read -r url; do
+            # Skip internal API URLs - only keep public arxiv.org/abs URLs
+            if [[ "$url" == *"arxiv.org/api/"* ]]; then
+                continue
+            fi
             echo "- $url"
         done
     else
